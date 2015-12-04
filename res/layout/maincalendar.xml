@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <LinearLayout
+        android:id="@+id/LLCalenderView"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="9"
+    
+        android:orientation="horizontal" >
+
+        <com.exina.android.calendar.CalendarView
+            android:id="@+id/calendar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cellbg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+       
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            
+            
+            
+        <Button
+            android:id="@+id/BTGoToPrevMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="prev" 
+            android:layout_alignParentLeft="true"/>
+        
+        
+        
+
+        <Button
+            android:id="@+id/BTGoToNextMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="next" 
+            android:layout_alignParentRight="true"
+           />
+
+        <TextView
+            android:id="@+id/TVMonthDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+          
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
